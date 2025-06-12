@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.2" name="com.example.controller.MovieControllerIntegrationTests" time="9.631" tests="2" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\nihar\Music\project\server\target\test-classes;C:\Users\nihar\Music\project\server\target\classes;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.4.4\spring-boot-starter-web-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter\3.4.4\spring-boot-starter-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.4.4\spring-boot-starter-logging-3.4.4.jar;C:\Users\nihar\.m2\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Users\nihar\.m2\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Users\nihar\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\nihar\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\nihar\.m2\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Users\nihar\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\nihar\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.4.4\spring-boot-starter-json-3.4.4.jar;C:\Users\nihar\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\nihar\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\nihar\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\nihar\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.18.3\jackson-datatype-jdk8-2.18.3.jar;C:\Users\nihar\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.18.3\jackson-datatype-jsr310-2.18.3.jar;C:\Users\nihar\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.18.3\jackson-module-parameter-names-2.18.3.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.4.4\spring-boot-starter-tomcat-3.4.4.jar;C:\Users\nihar\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.39\tomcat-embed-core-10.1.39.jar;C:\Users\nihar\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.39\tomcat-embed-el-10.1.39.jar;C:\Users\nihar\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.39\tomcat-embed-websocket-10.1.39.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-web\6.2.5\spring-web-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-beans\6.2.5\spring-beans-6.2.5.jar;C:\Users\nihar\.m2\repository\io\micrometer\micrometer-observation\1.14.5\micrometer-observation-1.14.5.jar;C:\Users\nihar\.m2\repository\io\micrometer\micrometer-commons\1.14.5\micrometer-commons-1.14.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-webmvc\6.2.5\spring-webmvc-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-context\6.2.5\spring-context-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-expression\6.2.5\spring-expression-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.4.4\spring-boot-starter-security-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-aop\6.2.5\spring-aop-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\security\spring-security-config\6.4.4\spring-security-config-6.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\security\spring-security-web\6.4.4\spring-security-web-6.4.4.jar;C:\Users\nihar\.m2\repository\com\h2database\h2\2.3.232\h2-2.3.232.jar;C:\Users\nihar\.m2\repository\org\springframework\security\spring-security-test\6.4.4\spring-security-test-6.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\security\spring-security-core\6.4.4\spring-security-core-6.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\security\spring-security-crypto\6.4.4\spring-security-crypto-6.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-core\6.2.5\spring-core-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-jcl\6.2.5\spring-jcl-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-test\6.2.5\spring-test-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.4.4\spring-boot-starter-jdbc-3.4.4.jar;C:\Users\nihar\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\nihar\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-jdbc\6.2.5\spring-jdbc-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-tx\6.2.5\spring-tx-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.4.4\spring-boot-starter-data-jpa-3.4.4.jar;C:\Users\nihar\.m2\repository\org\hibernate\orm\hibernate-core\6.6.11.Final\hibernate-core-6.6.11.Final.jar;C:\Users\nihar\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\nihar\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\nihar\.m2\repository\org\jboss\logging\jboss-logging\3.6.1.Final\jboss-logging-3.6.1.Final.jar;C:\Users\nihar\.m2\repository\org\hibernate\common\hibernate-commons-annotations\7.0.3.Final\hibernate-commons-annotations-7.0.3.Final.jar;C:\Users\nihar\.m2\repository\io\smallrye\jandex\3.2.0\jandex-3.2.0.jar;C:\Users\nihar\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\nihar\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\nihar\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\nihar\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\nihar\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\nihar\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\nihar\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\nihar\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\nihar\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\nihar\.m2\repository\org\springframework\data\spring-data-jpa\3.4.4\spring-data-jpa-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\data\spring-data-commons\3.4.4\spring-data-commons-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-orm\6.2.5\spring-orm-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-aspects\6.2.5\spring-aspects-6.2.5.jar;C:\Users\nihar\.m2\repository\org\aspectj\aspectjweaver\1.9.23\aspectjweaver-1.9.23.jar;C:\Users\nihar\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-devtools\3.4.4\spring-boot-devtools-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot\3.4.4\spring-boot-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.4.4\spring-boot-autoconfigure-3.4.4.jar;C:\Users\nihar\.m2\repository\org\projectlombok\lombok\1.18.36\lombok-1.18.36.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.4.4\spring-boot-starter-test-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-test\3.4.4\spring-boot-test-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.4.4\spring-boot-test-autoconfigure-3.4.4.jar;C:\Users\nihar\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\nihar\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\nihar\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\nihar\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\nihar\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\nihar\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\nihar\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\nihar\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\nihar\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\nihar\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.4\junit-jupiter-5.11.4.jar;C:\Users\nihar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.4\junit-jupiter-api-5.11.4.jar;C:\Users\nihar\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\nihar\.m2\repository\org\junit\platform\junit-platform-commons\1.11.4\junit-platform-commons-1.11.4.jar;C:\Users\nihar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nihar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.4\junit-jupiter-params-5.11.4.jar;C:\Users\nihar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.4\junit-jupiter-engine-5.11.4.jar;C:\Users\nihar\.m2\repository\org\junit\platform\junit-platform-engine\1.11.4\junit-platform-engine-1.11.4.jar;C:\Users\nihar\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\nihar\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar;C:\Users\nihar\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\nihar\.m2\repository\org\mockito\mockito-junit-jupiter\5.14.2\mockito-junit-jupiter-5.14.2.jar;C:\Users\nihar\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\nihar\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\nihar\.m2\repository\org\xmlunit\xmlunit-core\2.10.0\xmlunit-core-2.10.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="DB_USERNAME" value="root"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\nihar\AppData\Local\Temp\surefire2175123257777613748\surefirebooter-20250509201531021_3.jar C:\Users\nihar\AppData\Local\Temp\surefire2175123257777613748 2025-05-09T20-15-30_787-jvmRun1 surefire-20250509201531021_1tmp surefire_0-20250509201531021_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\nihar\Music\project\server\target\test-classes;C:\Users\nihar\Music\project\server\target\classes;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.4.4\spring-boot-starter-web-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter\3.4.4\spring-boot-starter-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.4.4\spring-boot-starter-logging-3.4.4.jar;C:\Users\nihar\.m2\repository\ch\qos\logback\logback-classic\1.5.18\logback-classic-1.5.18.jar;C:\Users\nihar\.m2\repository\ch\qos\logback\logback-core\1.5.18\logback-core-1.5.18.jar;C:\Users\nihar\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.24.3\log4j-to-slf4j-2.24.3.jar;C:\Users\nihar\.m2\repository\org\apache\logging\log4j\log4j-api\2.24.3\log4j-api-2.24.3.jar;C:\Users\nihar\.m2\repository\org\slf4j\jul-to-slf4j\2.0.17\jul-to-slf4j-2.0.17.jar;C:\Users\nihar\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\nihar\.m2\repository\org\yaml\snakeyaml\2.3\snakeyaml-2.3.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.4.4\spring-boot-starter-json-3.4.4.jar;C:\Users\nihar\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.18.3\jackson-databind-2.18.3.jar;C:\Users\nihar\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.18.3\jackson-annotations-2.18.3.jar;C:\Users\nihar\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.18.3\jackson-core-2.18.3.jar;C:\Users\nihar\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.18.3\jackson-datatype-jdk8-2.18.3.jar;C:\Users\nihar\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.18.3\jackson-datatype-jsr310-2.18.3.jar;C:\Users\nihar\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.18.3\jackson-module-parameter-names-2.18.3.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.4.4\spring-boot-starter-tomcat-3.4.4.jar;C:\Users\nihar\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.39\tomcat-embed-core-10.1.39.jar;C:\Users\nihar\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.39\tomcat-embed-el-10.1.39.jar;C:\Users\nihar\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.39\tomcat-embed-websocket-10.1.39.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-web\6.2.5\spring-web-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-beans\6.2.5\spring-beans-6.2.5.jar;C:\Users\nihar\.m2\repository\io\micrometer\micrometer-observation\1.14.5\micrometer-observation-1.14.5.jar;C:\Users\nihar\.m2\repository\io\micrometer\micrometer-commons\1.14.5\micrometer-commons-1.14.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-webmvc\6.2.5\spring-webmvc-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-context\6.2.5\spring-context-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-expression\6.2.5\spring-expression-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.4.4\spring-boot-starter-security-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-aop\6.2.5\spring-aop-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\security\spring-security-config\6.4.4\spring-security-config-6.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\security\spring-security-web\6.4.4\spring-security-web-6.4.4.jar;C:\Users\nihar\.m2\repository\com\h2database\h2\2.3.232\h2-2.3.232.jar;C:\Users\nihar\.m2\repository\org\springframework\security\spring-security-test\6.4.4\spring-security-test-6.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\security\spring-security-core\6.4.4\spring-security-core-6.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\security\spring-security-crypto\6.4.4\spring-security-crypto-6.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-core\6.2.5\spring-core-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-jcl\6.2.5\spring-jcl-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-test\6.2.5\spring-test-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.4.4\spring-boot-starter-jdbc-3.4.4.jar;C:\Users\nihar\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\nihar\.m2\repository\org\slf4j\slf4j-api\2.0.17\slf4j-api-2.0.17.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-jdbc\6.2.5\spring-jdbc-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-tx\6.2.5\spring-tx-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.4.4\spring-boot-starter-data-jpa-3.4.4.jar;C:\Users\nihar\.m2\repository\org\hibernate\orm\hibernate-core\6.6.11.Final\hibernate-core-6.6.11.Final.jar;C:\Users\nihar\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\nihar\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\nihar\.m2\repository\org\jboss\logging\jboss-logging\3.6.1.Final\jboss-logging-3.6.1.Final.jar;C:\Users\nihar\.m2\repository\org\hibernate\common\hibernate-commons-annotations\7.0.3.Final\hibernate-commons-annotations-7.0.3.Final.jar;C:\Users\nihar\.m2\repository\io\smallrye\jandex\3.2.0\jandex-3.2.0.jar;C:\Users\nihar\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\nihar\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\nihar\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\nihar\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\nihar\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\nihar\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\nihar\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\nihar\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\nihar\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\nihar\.m2\repository\org\springframework\data\spring-data-jpa\3.4.4\spring-data-jpa-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\data\spring-data-commons\3.4.4\spring-data-commons-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-orm\6.2.5\spring-orm-6.2.5.jar;C:\Users\nihar\.m2\repository\org\springframework\spring-aspects\6.2.5\spring-aspects-6.2.5.jar;C:\Users\nihar\.m2\repository\org\aspectj\aspectjweaver\1.9.23\aspectjweaver-1.9.23.jar;C:\Users\nihar\.m2\repository\com\mysql\mysql-connector-j\9.1.0\mysql-connector-j-9.1.0.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-devtools\3.4.4\spring-boot-devtools-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot\3.4.4\spring-boot-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.4.4\spring-boot-autoconfigure-3.4.4.jar;C:\Users\nihar\.m2\repository\org\projectlombok\lombok\1.18.36\lombok-1.18.36.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.4.4\spring-boot-starter-test-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-test\3.4.4\spring-boot-test-3.4.4.jar;C:\Users\nihar\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.4.4\spring-boot-test-autoconfigure-3.4.4.jar;C:\Users\nihar\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\nihar\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\nihar\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\nihar\.m2\repository\net\minidev\json-smart\2.5.2\json-smart-2.5.2.jar;C:\Users\nihar\.m2\repository\net\minidev\accessors-smart\2.5.2\accessors-smart-2.5.2.jar;C:\Users\nihar\.m2\repository\org\ow2\asm\asm\9.7.1\asm-9.7.1.jar;C:\Users\nihar\.m2\repository\org\assertj\assertj-core\3.26.3\assertj-core-3.26.3.jar;C:\Users\nihar\.m2\repository\org\awaitility\awaitility\4.2.2\awaitility-4.2.2.jar;C:\Users\nihar\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\nihar\.m2\repository\org\junit\jupiter\junit-jupiter\5.11.4\junit-jupiter-5.11.4.jar;C:\Users\nihar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.11.4\junit-jupiter-api-5.11.4.jar;C:\Users\nihar\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\nihar\.m2\repository\org\junit\platform\junit-platform-commons\1.11.4\junit-platform-commons-1.11.4.jar;C:\Users\nihar\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\nihar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.11.4\junit-jupiter-params-5.11.4.jar;C:\Users\nihar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.11.4\junit-jupiter-engine-5.11.4.jar;C:\Users\nihar\.m2\repository\org\junit\platform\junit-platform-engine\1.11.4\junit-platform-engine-1.11.4.jar;C:\Users\nihar\.m2\repository\org\mockito\mockito-core\5.14.2\mockito-core-5.14.2.jar;C:\Users\nihar\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar;C:\Users\nihar\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\nihar\.m2\repository\org\mockito\mockito-junit-jupiter\5.14.2\mockito-junit-jupiter-5.14.2.jar;C:\Users\nihar\.m2\repository\org\skyscreamer\jsonassert\1.5.3\jsonassert-1.5.3.jar;C:\Users\nihar\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\nihar\.m2\repository\org\xmlunit\xmlunit-core\2.10.0\xmlunit-core-2.10.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\nihar"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\nihar\Music\project\server"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\nihar\AppData\Local\Temp\surefire2175123257777613748\surefirebooter-20250509201531021_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.6+8-LTS-188"/>
+    <property name="user.name" value="nihar"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\nihar\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\nihar\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21.0.6"/>
+    <property name="user.dir" value="C:\Users\nihar\Music\project\server"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="64244"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\WINDOWS\System32\C:\Program Files\Java\jdk-21\bin;C:\Program Files\dotnet\;C:\Program Files\apache-maven-3.9.5\bin;C:\Program Files\apache-maven-3.9.5;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Calibre2\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\\C:\Program Files\Java\jdk-21\bin;C:\Program Files\dotnet\;C:\Program Files\apache-maven-3.9.5\bin;C:\Program Files\apache-maven-3.9.5;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Calibre2\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\\C:\Program Files\Java\jdk-21\bin;C:\Program Files\dotnet\;C:\Program Files\apache-maven-3.9.5\bin;C:\Program Files\apache-maven-3.9.5;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\Program Files\Calibre2\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\nihar\AppData\Local\Microsoft\WindowsApps;C:\Users\nihar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\nihar\AppData\Roaming\npm;C:\Users\nihar\go\bin;C:\Program Files\Multipass\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.2\bin;;C:\Program Files\Java\jdk-20\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.6+8-LTS-188"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="DB_PASSWORD" value="root"/>
+  </properties>
+  <testcase name="createMovie_whenUserIsAdmin_shouldCreateMovieAndReturnCreated" classname="com.example.controller.MovieControllerIntegrationTests" time="1.25">
+    <system-out><![CDATA[20:15:32.209 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.controller.MovieControllerIntegrationTests]: MovieControllerIntegrationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:15:32.443 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.MovieApiApplication for test class com.example.controller.MovieControllerIntegrationTests
+20:15:32.709 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.4)
+
+2025-05-09T20:15:33.182-04:00  INFO 64244 --- [           main] c.e.c.MovieControllerIntegrationTests    : Starting MovieControllerIntegrationTests using Java 21.0.6 with PID 64244 (started by nihar in C:\Users\nihar\Music\project\server)
+2025-05-09T20:15:33.182-04:00  INFO 64244 --- [           main] c.e.c.MovieControllerIntegrationTests    : No active profile set, falling back to 1 default profile: "default"
+2025-05-09T20:15:34.286-04:00  INFO 64244 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-09T20:15:34.411-04:00  INFO 64244 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 112 ms. Found 3 JPA repository interfaces.
+2025-05-09T20:15:35.051-04:00  INFO 64244 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-09T20:15:35.411-04:00  INFO 64244 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f081b5d
+2025-05-09T20:15:35.411-04:00  INFO 64244 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-09T20:15:35.411-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\nihar\Music\project\server\target\classes\schema.sql]
+2025-05-09T20:15:35.473-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS movies ( id BIGINT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(255) NOT NULL, director VARCHAR(255), release_year INT, genre VARCHAR(100) )
+2025-05-09T20:15:35.996-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : SQLWarning ignored: SQL state '42S01', error code '1050', message [Table 'movies' already exists]
+2025-05-09T20:15:36.011-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS users ( id BIGINT AUTO_INCREMENT PRIMARY KEY, username VARCHAR(50) NOT NULL UNIQUE, password VARCHAR(255) NOT NULL, email VARCHAR(100) UNIQUE )
+2025-05-09T20:15:36.011-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : SQLWarning ignored: SQL state '42S01', error code '1050', message [Table 'users' already exists]
+2025-05-09T20:15:36.027-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS user_roles ( user_id BIGINT NOT NULL, role VARCHAR(50) NOT NULL, PRIMARY KEY (user_id, role), FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE )
+2025-05-09T20:15:36.027-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : SQLWarning ignored: SQL state '42S01', error code '1050', message [Table 'user_roles' already exists]
+2025-05-09T20:15:36.042-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: CREATE TABLE IF NOT EXISTS reviews ( id BIGINT AUTO_INCREMENT PRIMARY KEY, movie_id BIGINT NOT NULL, user_id BIGINT, username VARCHAR(255), content TEXT NOT NULL, rating INT NOT NULL CHECK (rating >= 1 AND rating <= 5), created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP, FOREIGN KEY (movie_id) REFERENCES movies(id) ON DELETE CASCADE, FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE SET NULL )
+2025-05-09T20:15:36.042-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : SQLWarning ignored: SQL state '42S01', error code '1050', message [Table 'reviews' already exists]
+2025-05-09T20:15:36.042-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\nihar\Music\project\server\target\classes\schema.sql] in 631 ms.
+2025-05-09T20:15:36.042-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from file [C:\Users\nihar\Music\project\server\target\classes\data.sql]
+2025-05-09T20:15:36.058-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : 0 returned as update count for SQL: INSERT IGNORE INTO movies (id, title, director, release_year, genre) VALUES (1, 'Inception', 'Christopher Nolan', 2010, 'Sci-Fi'), (2, 'The Shawshank Redemption', 'Frank Darabont', 1994, 'Drama'), (3, 'The Dark Knight', 'Christopher Nolan', 2008, 'Action'), (4, 'Pulp Fiction', 'Quentin Tarantino', 1994, 'Crime'), (5, 'Forrest Gump', 'Robert Zemeckis', 1994, 'Drama')
+2025-05-09T20:15:36.058-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : SQLWarning ignored: SQL state '23000', error code '1062', message [Duplicate entry '1' for key 'movies.PRIMARY']
+2025-05-09T20:15:36.058-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : SQLWarning ignored: SQL state '23000', error code '1062', message [Duplicate entry '2' for key 'movies.PRIMARY']
+2025-05-09T20:15:36.058-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : SQLWarning ignored: SQL state '23000', error code '1062', message [Duplicate entry '3' for key 'movies.PRIMARY']
+2025-05-09T20:15:36.058-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : SQLWarning ignored: SQL state '23000', error code '1062', message [Duplicate entry '4' for key 'movies.PRIMARY']
+2025-05-09T20:15:36.058-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : SQLWarning ignored: SQL state '23000', error code '1062', message [Duplicate entry '5' for key 'movies.PRIMARY']
+2025-05-09T20:15:36.058-04:00 DEBUG 64244 --- [           main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from file [C:\Users\nihar\Music\project\server\target\classes\data.sql] in 16 ms.
+2025-05-09T20:15:36.230-04:00  INFO 64244 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-09T20:15:36.355-04:00  INFO 64244 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-05-09T20:15:36.417-04:00  INFO 64244 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-09T20:15:36.917-04:00  INFO 64244 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-09T20:15:37.042-04:00  WARN 64244 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-09T20:15:37.042-04:00  WARN 64244 --- [           main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-05-09T20:15:37.058-04:00  INFO 64244 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-09T20:15:38.230-04:00  INFO 64244 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-09T20:15:38.293-04:00  INFO 64244 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-09T20:15:38.839-04:00  WARN 64244 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-09T20:15:38.902-04:00  INFO 64244 --- [           main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2025-05-09T20:15:39.433-04:00 DEBUG 64244 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CsrfFilter, LogoutFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2025-05-09T20:15:39.918-04:00  INFO 64244 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2025-05-09T20:15:39.918-04:00  INFO 64244 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2025-05-09T20:15:39.918-04:00  INFO 64244 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2025-05-09T20:15:39.965-04:00  INFO 64244 --- [           main] c.e.c.MovieControllerIntegrationTests    : Started MovieControllerIntegrationTests in 7.272 seconds (process running for 8.771)
+Hibernate: 
+    select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    limit
+        ?
+2025-05-09T20:15:40.246-04:00  INFO 64244 --- [           main] com.example.config.DataInitializer       : Default admin user 'admin' already exists. No action taken.
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.director,
+        m1_0.genre,
+        m1_0.release_year,
+        m1_0.title 
+    from
+        movies m1_0
+Hibernate: 
+    select
+        r1_0.movie_id,
+        r1_0.id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.rating,
+        r1_0.user_id 
+    from
+        reviews r1_0 
+    where
+        r1_0.movie_id=?
+Hibernate: 
+    select
+        r1_0.movie_id,
+        r1_0.id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.rating,
+        r1_0.user_id 
+    from
+        reviews r1_0 
+    where
+        r1_0.movie_id=?
+Hibernate: 
+    select
+        r1_0.movie_id,
+        r1_0.id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.rating,
+        r1_0.user_id 
+    from
+        reviews r1_0 
+    where
+        r1_0.movie_id=?
+Hibernate: 
+    select
+        r1_0.movie_id,
+        r1_0.id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.rating,
+        r1_0.user_id 
+    from
+        reviews r1_0 
+    where
+        r1_0.movie_id=?
+Hibernate: 
+    select
+        r1_0.movie_id,
+        r1_0.id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.rating,
+        r1_0.user_id 
+    from
+        reviews r1_0 
+    where
+        r1_0.movie_id=?
+Hibernate: 
+    delete 
+    from
+        movies 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        reviews 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        movies 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        reviews 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        reviews 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        movies 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        movies 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        movies 
+    where
+        id=?
+Hibernate: 
+    insert 
+    into
+        movies
+        (director, genre, release_year, title) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        movies
+        (director, genre, release_year, title) 
+    values
+        (?, ?, ?, ?)
+2025-05-09T20:15:41.153-04:00 DEBUG 64244 --- [           main] w.c.HttpSessionSecurityContextRepository : Created HttpSession as SecurityContext is non-default
+2025-05-09T20:15:41.153-04:00 DEBUG 64244 --- [           main] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]] to HttpSession [org.springframework.mock.web.MockHttpSession@41fbe8c0]
+2025-05-09T20:15:41.184-04:00 DEBUG 64244 --- [           main] o.s.security.web.FilterChainProxy        : Securing POST /api/movies
+2025-05-09T20:15:41.184-04:00 DEBUG 64244 --- [           main] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=org.springframework.security.core.userdetails.User [Username=admin, Password=[PROTECTED], Enabled=true, AccountNonExpired=true, CredentialsNonExpired=true, AccountNonLocked=true, Granted Authorities=[ROLE_ADMIN]], Credentials=[PROTECTED], Authenticated=true, Details=null, Granted Authorities=[ROLE_ADMIN]]]
+2025-05-09T20:15:41.184-04:00 DEBUG 64244 --- [           main] o.s.security.web.FilterChainProxy        : Secured POST /api/movies
+Hibernate: 
+    insert 
+    into
+        movies
+        (director, genre, release_year, title) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.director,
+        m1_0.genre,
+        m1_0.release_year,
+        m1_0.title 
+    from
+        movies m1_0
+Hibernate: 
+    select
+        r1_0.movie_id,
+        r1_0.id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.rating,
+        r1_0.user_id 
+    from
+        reviews r1_0 
+    where
+        r1_0.movie_id=?
+Hibernate: 
+    select
+        r1_0.movie_id,
+        r1_0.id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.rating,
+        r1_0.user_id 
+    from
+        reviews r1_0 
+    where
+        r1_0.movie_id=?
+Hibernate: 
+    select
+        r1_0.movie_id,
+        r1_0.id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.rating,
+        r1_0.user_id 
+    from
+        reviews r1_0 
+    where
+        r1_0.movie_id=?
+Hibernate: 
+    delete 
+    from
+        movies 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        movies 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        movies 
+    where
+        id=?
+]]></system-out>
+    <system-err><![CDATA[Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+WARNING: A Java agent has been loaded dynamically (C:\Users\nihar\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+  <testcase name="getAllMovies_shouldReturnListOfMoviesAndOkStatus" classname="com.example.controller.MovieControllerIntegrationTests" time="0.109">
+    <system-out><![CDATA[Hibernate: 
+    select
+        m1_0.id,
+        m1_0.director,
+        m1_0.genre,
+        m1_0.release_year,
+        m1_0.title 
+    from
+        movies m1_0
+Hibernate: 
+    insert 
+    into
+        movies
+        (director, genre, release_year, title) 
+    values
+        (?, ?, ?, ?)
+Hibernate: 
+    insert 
+    into
+        movies
+        (director, genre, release_year, title) 
+    values
+        (?, ?, ?, ?)
+2025-05-09T20:15:41.559-04:00 DEBUG 64244 --- [           main] o.s.security.web.FilterChainProxy        : Securing GET /api/movies
+2025-05-09T20:15:41.559-04:00 DEBUG 64244 --- [           main] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2025-05-09T20:15:41.559-04:00 DEBUG 64244 --- [           main] o.s.security.web.FilterChainProxy        : Secured GET /api/movies
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.director,
+        m1_0.genre,
+        m1_0.release_year,
+        m1_0.title 
+    from
+        movies m1_0
+Hibernate: 
+    select
+        r1_0.movie_id,
+        r1_0.id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.rating,
+        r1_0.user_id 
+    from
+        reviews r1_0 
+    where
+        r1_0.movie_id=?
+Hibernate: 
+    select
+        r1_0.movie_id,
+        r1_0.id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.rating,
+        r1_0.user_id 
+    from
+        reviews r1_0 
+    where
+        r1_0.movie_id=?
+Hibernate: 
+    select
+        m1_0.id,
+        m1_0.director,
+        m1_0.genre,
+        m1_0.release_year,
+        m1_0.title 
+    from
+        movies m1_0
+Hibernate: 
+    select
+        r1_0.movie_id,
+        r1_0.id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.rating,
+        r1_0.user_id 
+    from
+        reviews r1_0 
+    where
+        r1_0.movie_id=?
+Hibernate: 
+    select
+        r1_0.movie_id,
+        r1_0.id,
+        r1_0.content,
+        r1_0.created_at,
+        r1_0.rating,
+        r1_0.user_id 
+    from
+        reviews r1_0 
+    where
+        r1_0.movie_id=?
+Hibernate: 
+    delete 
+    from
+        movies 
+    where
+        id=?
+Hibernate: 
+    delete 
+    from
+        movies 
+    where
+        id=?
+]]></system-out>
+  </testcase>
+</testsuite>

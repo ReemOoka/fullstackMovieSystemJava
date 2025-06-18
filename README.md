@@ -91,9 +91,8 @@ The backend is compatible with any frontend but includes demo integration with *
 
 1. **Clone the repo**
    ```bash
-   git clone https://github.com/ReemPatel13/movie-management-api.git
-   cd movie-management-api
-
+   git clone https://github.com/ReemOoka/fullstackMovieSystem.git
+   cd fullstackMovieSystem
 
 ### Configure your database
 
